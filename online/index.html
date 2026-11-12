@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casal Alinhado Online | Fortaleça seu casamento</title>
+<meta name="description" content="Curso online para casais: comunicação, conexão e um casamento com propósito. 11 aulas para assistir no seu tempo, com Carla e Douglas.">
+<meta property="og:title" content="Casal Alinhado Online">
+<meta property="og:description" content="Transforme seu casamento em uma união forte, alinhada e duradoura.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/capa.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script>
+  /* ===== Pixel da Meta =====
+     Cole o número do Pixel entre as aspas para ativar. Vazio = desligado. */
+  const PIXEL_ID = "";
+  if (PIXEL_ID) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', PIXEL_ID);
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent', {content_name: 'Casal Alinhado Online', value: 67, currency: 'BRL'});
+  }
+</script>
+
+<style>
+  :root{
+    --bg:#FAF3EC; --bg-soft:#F3E9DD; --card:#FFFDFA;
+    --ink:#2B2019; --ink-soft:#6B5D53; --border:#E8DDD0;
+    --olive:#6B7A3A; --olive-dark:#52611F;
+    --sage:#4F6B54; --sage-bg:#E7EDE3;
+    --gold:#B98A3D; --gold-bg:#F3E7D0;
+    --radius:18px; --shadow:0 10px 32px -14px rgba(43,32,25,.28);
+    --wrap:1040px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 'Work Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .5em;letter-spacing:-.01em}
+  h1{font-size:clamp(32px,5.4vw,54px)}
+  h2{font-size:clamp(26px,3.8vw,40px)}
+  h3{font-size:21px}
+  p{margin:0 0 1em}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+  section{padding:72px 0}
+  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);margin-bottom:12px}
+  .lead{font-size:19px;color:var(--ink-soft);max-width:640px}
+  .center{text-align:center}
+  .center .lead{margin-left:auto;margin-right:auto}
+
+  /* botões */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--olive);color:#fff;text-decoration:none;font-weight:600;font-size:17px;letter-spacing:.02em;padding:18px 34px;border-radius:999px;box-shadow:0 10px 24px -10px rgba(82,97,31,.7);transition:transform .15s,background .15s}
+  .btn:hover{background:var(--olive-dark);transform:translateY(-2px)}
+  .btn.light{background:var(--card);color:var(--olive-dark);box-shadow:none;border:1.5px solid var(--olive)}
+  .btn.light:hover{background:var(--sage-bg)}
+  .cta-note{font-size:14px;color:var(--ink-soft);margin-top:12px}
+
+  /* capa */
+  .hero{padding:0;background:var(--bg-soft)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:48px;min-height:620px}
+  .hero-text{padding:64px 0}
+  .hero-photo{align-self:stretch;position:relative;overflow:hidden;border-radius:0 0 0 var(--radius)}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .brand{font-family:'Fraunces',serif;font-weight:600;font-size:18px;letter-spacing:.08em;text-transform:uppercase;color:var(--olive-dark);margin-bottom:28px}
+
+  /* blocos */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+  .card .num{font-family:'Fraunces',serif;font-size:30px;color:var(--gold);line-height:1;margin-bottom:10px}
+  .pains{background:var(--olive-dark);color:#F7F1E6}
+  .pains h2{color:#fff}
+  .pains .lead{color:#E3DFC9}
+  .pain-list{list-style:none;padding:0;margin:32px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px}
+  .pain-list li{position:relative;padding-left:30px;font-size:18px}
+  .pain-list li:before{content:"";position:absolute;left:0;top:.55em;width:14px;height:14px;border-radius:50%;border:2px solid var(--gold)}
+  .learn{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .check{list-style:none;padding:0;margin:0}
+  .check li{position:relative;padding:14px 0 14px 38px;border-bottom:1px solid var(--border)}
+  .check li:last-child{border-bottom:0}
+  .check li:before{content:"";position:absolute;left:0;top:17px;width:22px;height:22px;border-radius:50%;background:var(--sage-bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%234F6B54' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+  .quote{font-family:'Fraunces',serif;font-size:24px;line-height:1.35;color:var(--olive-dark);border-left:3px solid var(--gold);padding-left:22px;margin-top:28px}
+
+  .facts{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px}
+  .fact{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 20px}
+  .fact b{display:block;font-family:'Fraunces',serif;font-size:26px;color:var(--olive-dark);line-height:1.1}
+  .fact span{font-size:14px;color:var(--ink-soft)}
+
+  .bonus{background:var(--bg-soft)}
+  .bonus-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
+  .bonus-item{background:var(--card);border-radius:var(--radius);padding:30px;border:1px solid var(--border);display:flex;gap:20px;align-items:flex-start}
+  .badge{flex:none;width:52px;height:52px;border-radius:50%;background:var(--gold-bg);color:var(--gold);font-family:'Fraunces',serif;font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center}
+
+  .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+  .about-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;background:var(--bg-soft)}
+  .about-photo img{width:100%;height:100%;object-fit:cover}
+
+  .testimonials{background:var(--sage-bg)}
+  .t-grid{columns:3 260px;column-gap:20px;margin-top:36px}
+  .t-grid img{width:100%;border-radius:14px;margin:0 0 20px;break-inside:avoid;box-shadow:var(--shadow);background:#fff}
+
+  .offer{background:var(--olive-dark);color:#F7F1E6}
+  .offer-box{max-width:560px;margin:0 auto;background:var(--card);color:var(--ink);border-radius:24px;padding:40px 32px;text-align:center;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+  .offer-box h2{font-size:30px}
+  .includes{list-style:none;padding:0;margin:20px 0 26px;text-align:left}
+  .includes li{padding:10px 0 10px 34px;position:relative;border-bottom:1px dashed var(--border)}
+  .includes li:before{content:"✓";position:absolute;left:4px;top:9px;color:var(--sage);font-weight:700}
+  .old{color:var(--ink-soft);text-decoration:line-through;font-size:18px}
+  .price{font-family:'Fraunces',serif;font-weight:700;font-size:64px;line-height:1;color:var(--olive-dark);margin:6px 0 4px}
+  .price small{font-size:26px;vertical-align:.9em;margin-right:4px}
+  .installments{color:var(--ink-soft);margin-bottom:24px}
+  .guarantee{display:flex;gap:14px;align-items:center;text-align:left;background:var(--gold-bg);border-radius:14px;padding:16px 18px;margin-top:24px;font-size:15px}
+  .guarantee b{font-family:'Fraunces',serif;font-size:26px;color:var(--gold);flex:none}
+
+  .faq{max-width:760px;margin:36px auto 0}
+  details{background:var(--card);border:1px solid var(--border);border-radius:14px;margin-bottom:12px;padding:0 22px}
+  summary{cursor:pointer;list-style:none;padding:20px 30px 20px 0;font-weight:600;position:relative}
+  summary::-webkit-details-marker{display:none}
+  summary:after{content:"+";position:absolute;right:0;top:14px;font-size:26px;color:var(--olive);font-weight:400}
+  details[open] summary:after{content:"–"}
+  details p{color:var(--ink-soft);padding-bottom:18px;margin:0}
+
+  .bonus-img{width:150px;border-radius:10px;margin-top:6px;box-shadow:var(--shadow)}
+  .offer-img{border-radius:14px;margin:-8px 0 24px;box-shadow:var(--shadow)}
+  .closing{text-align:center}
+  footer{padding:32px 0 96px;text-align:center;font-size:14px;color:var(--ink-soft);border-top:1px solid var(--border)}
+  footer a{color:var(--ink-soft)}
+
+  .sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(250,243,236,.96);backdrop-filter:blur(6px);border-top:1px solid var(--border);display:none;z-index:10}
+  .sticky .btn{width:100%;padding:15px}
+
+  @media (max-width:860px){
+    section{padding:56px 0}
+    .hero-grid{grid-template-columns:1fr;gap:0;min-height:0}
+    .hero-photo{order:-1;margin:0 -20px;border-radius:0;aspect-ratio:4/3.4}
+    .hero-text{padding:36px 0 48px}
+    .cards,.bonus-grid,.learn,.about{grid-template-columns:1fr}
+    .about{gap:32px}
+    .pain-list{grid-template-columns:1fr}
+    .sticky{display:block}
+    .btn{width:100%}
+    .offer-box{padding:32px 22px}
+    .price{font-size:56px}
+  }
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <div class="brand">Casal Alinhado</div>
+      <h1>Transforme seu casamento em uma união forte, alinhada e duradoura</h1>
+      <p class="lead">Um método simples e comprovado para reconstruir a conexão, fortalecer a família e viver um casamento com propósito, mesmo que vocês já tenham tentado de tudo.</p>
+      <a class="btn js-buy" href="https://pay.hotmart.com/H104003011P">Quero acessar agora</a>
+      <p class="cta-note">Acesso imediato · Assista no seu tempo · Garantia de 7 dias</p>
+    </div>
+    <div class="hero-photo">
+      <img src="img/capa.jpg" alt="Carla e Douglas, do Casal Alinhado">
+    </div>
+  </div>
+</section>
+
+<!-- PROMESSA -->
+<section>
+  <div class="wrap center">
+    <div class="eyebrow">O seu casamento pode ser diferente</div>
+    <h2>E vocês não precisam esperar mais para isso acontecer</h2>
+    <p class="lead">O Casal Alinhado Online é uma jornada prática para casais que querem fortalecer o relacionamento, melhorar o diálogo e construir uma família sólida, saudável e com propósito.</p>
+    <div class="cards" style="text-align:left">
+      <div class="card"><div class="num">01</div><h3>Sair do automático</h3><p>Ferramentas práticas e reflexões para olhar de novo para o casamento.</p></div>
+      <div class="card"><div class="num">02</div><h3>Mais conexão no dia a dia</h3><p>Direcionamentos claros para fortalecer a parceria, a conexão e o respeito.</p></div>
+      <div class="card"><div class="num">03</div><h3>Mesma direção</h3><p>Caminhar juntos, com mais intencionalidade e propósito como casal.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DORES -->
+<section class="pains">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--gold)">Para casais reais, com desafios reais</div>
+    <h2>Mesmo que vocês sintam que…</h2>
+    <ul class="pain-list">
+      <li>estão vivendo no automático</li>
+      <li>já tentaram conversar e nada mudou</li>
+      <li>um dos dois tem mais dificuldade de se abrir</li>
+      <li>a rotina afastou vocês</li>
+      <li>o relacionamento esfriou com o tempo</li>
+    </ul>
+    <p class="lead" style="margin-top:32px">O Casal Alinhado foi criado justamente para ajudar casais a retomar a conexão e aprender a crescer juntos de novo.</p>
+  </div>
+</section>
+
+<!-- O QUE APRENDEM -->
+<section>
+  <div class="wrap learn">
+    <div>
+      <div class="eyebrow">Durante o curso</div>
+      <h2>O casal vai aprender como…</h2>
+      <p class="lead">É um processo de alinhamento emocional, comunicação e visão de futuro, para casais que entendem que o amor precisa ser cultivado todos os dias.</p>
+      <div class="facts">
+        <div class="fact"><b>11</b><span>aulas gravadas</span></div>
+        <div class="fact"><b>~4h</b><span>de conteúdo</span></div>
+        <div class="fact"><b>24h</b><span>no seu horário</span></div>
+      </div>
+      <p class="quote">Esse não é apenas um curso sobre casamento.</p>
+    </div>
+    <ul class="check">
+      <li>Fortalecer a comunicação e evitar desgastes desnecessários</li>
+      <li>Alinhar valores, sonhos e objetivos do casal</li>
+      <li>Desenvolver mais empatia, respeito e compreensão</li>
+      <li>Reconstruir a conexão emocional e a intimidade</li>
+      <li>Lidar com as diferenças sem transformar tudo em conflito</li>
+      <li>Criar uma relação mais leve, segura e saudável</li>
+      <li>Fortalecer a base da família e do lar</li>
+    </ul>
+  </div>
+</section>
+
+<!-- BÔNUS -->
+<section class="bonus">
+  <div class="wrap center">
+    <div class="eyebrow">Exclusivo para alunos</div>
+    <h2>Dois bônus junto com o curso</h2>
+    <div class="bonus-grid" style="text-align:left">
+      <div class="bonus-item"><div class="badge">1</div><div><h3>E-book 27 Ideias Românticas</h3><p>Ideias para o casal sair da rotina e viver um casamento alinhado.</p><img class="bonus-img" src="img/ebook.jpg" alt="Capa do e-book 27 Ideias Românticas" loading="lazy"></div></div>
+      <div class="bonus-item"><div class="badge">2</div><div><h3>Grupo exclusivo no WhatsApp</h3><p>Casais na mesma jornada e dicas semanais.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section>
+  <div class="wrap about">
+    <div class="about-photo"><img src="img/sobre.jpg" alt="Carla e Douglas"></div>
+    <div>
+      <div class="eyebrow">Sobre Carla e Douglas</div>
+      <h2>Não acreditamos em casamentos perfeitos</h2>
+      <p>Antes do Casal Alinhado, éramos um casal comum, com diferenças, desafios e dificuldades na comunicação. Viemos de histórias e crenças diferentes. A Carla sonhava em construir uma família forte; o Douglas tinha uma visão mais leve sobre casamento. Ainda assim, escolhemos caminhar juntos.</p>
+      <p>Carla, advogada. Douglas, administrador e empresário. E, como muitos casais: um gastava mais, o outro economizava. Um era acelerado, o outro mais calmo. Um queria conversar, o outro se fechava.</p>
+      <p>Até que a Carla decidiu começar por si, buscando desenvolvimento emocional e melhorando a comunicação. Com o tempo, o Douglas também escolheu viver essa transformação. O que começou dentro da nossa casa passou a impactar outros casais.</p>
+      <p class="quote">Acreditamos em casais que escolhem crescer juntos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="testimonials" id="depoimentos">
+  <div class="wrap center">
+    <div class="eyebrow">Depoimentos</div>
+    <h2>Quem decidiu viver um casamento com propósito</h2>
+    <div class="t-grid" id="t-grid">
+      <!-- As imagens dos depoimentos entram aqui: img/depoimento-1.jpg, depoimento-2.jpg ... -->
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <div class="offer-box">
+      <img class="offer-img" src="img/curso.jpg" alt="Área do curso Casal Alinhado na Hotmart" loading="lazy">
+      <div class="eyebrow">Casal Alinhado Online + 2 bônus</div>
+      <h2>Decida hoje construir o seu</h2>
+      <ul class="includes">
+        <li>11 aulas gravadas do Casal Alinhado Online</li>
+        <li>Bônus 1: E-book 27 Ideias Românticas</li>
+        <li>Bônus 2: Grupo exclusivo no WhatsApp</li>
+        <li>Acesso imediato, para assistir quando e onde quiserem</li>
+      </ul>
+      <div class="old">De R$ 297</div>
+      <div class="price"><small>R$</small>67</div>
+      <div class="installments">à vista ou em até 12x no cartão</div>
+      <a class="btn js-buy" href="https://pay.hotmart.com/H104003011P">Quero meu acesso agora</a>
+      <div class="guarantee"><b>7 dias</b><span>Se não fizer sentido para vocês, peçam o reembolso em até 7 dias pela Hotmart. Sem perguntas.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Perguntas frequentes</div>
+      <h2>Ainda com dúvidas?</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Posso fazer o curso sem o meu cônjuge?</summary><p>Sim. Muitas pessoas começam sozinhas e já transformam a forma de se comunicar, compreender e conduzir o relacionamento. Quando um muda, a dinâmica do casal também muda.</p></details>
+      <details><summary>O curso é só para casais em crise?</summary><p>Não. O Casal Alinhado foi criado tanto para casais que querem restaurar a conexão quanto para os que querem fortalecer ainda mais o casamento e construir uma relação com propósito.</p></details>
+      <details><summary>E se eu já tentei de tudo e nada funcionou?</summary><p>O Casal Alinhado não é só teoria. É um método estruturado, com direcionamentos práticos e reflexões profundas, que ajudam o casal a enxergar a raiz dos conflitos e a construir uma nova forma de caminhar junto.</p></details>
+      <details><summary>Não temos muito tempo. O curso funciona para nós?</summary><p>Sim. O curso foi pensado para casais com rotina corrida. As aulas podem ser assistidas no horário que fizer mais sentido para vocês.</p></details>
+      <details><summary>Serve para namorados e noivos?</summary><p>Sim. Quanto antes o casal aprende a se comunicar, alinhar valores e entender as diferenças, mais saudável se torna a relação.</p></details>
+    </div>
+    <div class="center" style="margin-top:32px">
+      <a class="btn light" href="https://wa.me/message/PBG6HPN7NEWKB1" target="_blank" rel="noopener">Falar com a gente no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FECHAMENTO -->
+<section class="closing" style="background:var(--bg-soft)">
+  <div class="wrap">
+    <h2>Casamentos fortes não acontecem por acaso</h2>
+    <p class="lead" style="margin:0 auto 28px">Decidam hoje construir o de vocês.</p>
+    <a class="btn js-buy" href="https://pay.hotmart.com/H104003011P">Quero acessar agora</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 Casal Alinhado · Todos os direitos reservados ·
+    <a href="https://www.instagram.com/casal.alinhado" target="_blank" rel="noopener">@casal.alinhado</a>
+  </div>
+</footer>
+
+<div class="sticky"><a class="btn js-buy" href="https://pay.hotmart.com/H104003011P">Quero acessar por R$ 67</a></div>
+
+<script>
+  // Depoimentos: mostra img/depoimento-1.jpg, -2, -3... até a primeira que não existir
+  (function(){
+    const grid = document.getElementById('t-grid');
+    let i = 1;
+    (function next(){
+      const img = new Image();
+      img.alt = 'Depoimento de aluno';
+      img.onload = () => { grid.appendChild(img); i++; if (i <= 30) next(); };
+      img.onerror = () => { if (i === 1) document.getElementById('depoimentos').style.display = 'none'; };
+      img.src = 'img/depoimento-' + i + '.jpg';
+    })();
+  })();
+
+  // Fotos que ainda não existem não aparecem quebradas
+  document.querySelectorAll('.hero-photo img, .about-photo img').forEach(img => {
+    img.addEventListener('error', () => { img.style.display = 'none'; });
+  });
+
+  // Leva as UTMs do anúncio até o checkout e avisa o Pixel do clique
+  (function(){
+    const params = new URLSearchParams(location.search);
+    const keep = new URLSearchParams();
+    for (const [k, v] of params) if (k.startsWith('utm_') || k === 'src' || k === 'sck') keep.set(k, v);
+    document.querySelectorAll('.js-buy').forEach(a => {
+      if ([...keep].length) a.href += (a.href.includes('?') ? '&' : '?') + keep.toString();
+      a.addEventListener('click', () => { if (window.fbq) fbq('track', 'InitiateCheckout', {value: 67, currency: 'BRL'}); });
+    });
+  })();
+</script>
+</body>
+</html>
